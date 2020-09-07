@@ -14,6 +14,20 @@ body {
   width: 600px;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .slide-container {
+    margin: auto -8.5em;
+    width: 600px;
+    text-align: center; 
+  }
+}
+@media (max-width: 360px) {
+  .slide-container {
+    margin: auto -8.9em;
+    width: 600px;
+    text-align: center; 
+  }
+}
 
 .wrapper {
   padding-top: 20px;
