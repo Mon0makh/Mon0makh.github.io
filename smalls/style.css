@@ -17,15 +17,19 @@ body {
 @media (max-width: 767px) {
   .slide-container {
     margin: auto -8.5em;
-    width: 600px;
-    text-align: center; 
+
+  }
+}
+@media (max-width: 480px) {
+  .slide-container {
+    margin: auto -8.7em;
+
   }
 }
 @media (max-width: 360px) {
   .slide-container {
     margin: auto -8.9em;
-    width: 600px;
-    text-align: center; 
+
   }
 }
 
@@ -146,4 +150,13 @@ body {
 .slick-next {
   right: 100px;
   z-index: 999;
+}
+@media (max-width: 480px) {
+  .slick-prev {
+    visibility: hidden;
+  }
+
+  .slick-next {
+    visibility: hidden;
+  }
 }
