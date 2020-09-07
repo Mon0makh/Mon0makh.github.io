@@ -174,8 +174,8 @@ p {
 }
 
 .section-padding {
-	padding-top: 6%;
-	padding-bottom: 6%;
+	padding-top: 3%;
+
 }
 
 .section-padding#responsive{
@@ -658,7 +658,7 @@ ul.social-buttons {
 
 ul.social-buttons li {
 	display: inline-block;
-	margin-right: 10px;
+	margin-right: auto;
 }
 
 ul.social-buttons li:last-child {
@@ -1630,7 +1630,7 @@ a {
 }
 
 #portfolio {
-	background-color: #202020;
+	background-color: #010101;
 }
 
 .planContainer {
@@ -1739,7 +1739,7 @@ ul.planContainer li.title {
 	display: block;
 	position: absolute;
 	z-index: 20;
-	background: rgba(12, 89, 216, 0.5);
+	background: rgba(180, 1, 1, 0.5);
 	overflow: hidden;
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -1785,7 +1785,7 @@ button.expand {
 }
 
 .overlay-effect .img i {
-	font-size: 30px;
+	font-size: 80px;
 }
 
 .overlay-effect .overlay {

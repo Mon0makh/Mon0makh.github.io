@@ -13,7 +13,7 @@ body {
 }
 
 .form .label, .form .checkbox-input + label, .form .option-input + label, .form .text-input, .form .textarea, .form .select, .customSelect, .form .message, .form .button {
-  padding: 0.75em 1em;
+  padding: 0.6em 0.8em;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
