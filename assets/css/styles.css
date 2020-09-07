@@ -27,33 +27,22 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	
+	-ms-overflow-style: none;  /* IE and Edge */
+  	scrollbar-width: none;  /* Firefox */
 }
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #B40001 black;
-}
-*::-webkit-scrollbar {
-  width: 12px;
+::-webkit-scrollbar {
+  display: none;
 }
 
-*::-webkit-scrollbar-thumb {
-  background-color: black;
-  border-radius: 20px;
-}
-* {
-  box-sizing: border-box;
-}
- 
 body {
 	color: #7a7a7a;
 	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
 	font-style: normal;
 	line-height:1.5;
-	overflow:hidden;
-
+	overflow: hidden;
 }
+
 
 a:hover,a:active {
     outline: 0;

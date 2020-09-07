@@ -183,7 +183,7 @@ body {
 float: none;
 }
 .header.header-hide {
-	background: none repeat scroll 0 0 #0f1726;
+	background: none repeat scroll 0 0 #000;
 }
 .navbar-header {
 	float: none;
@@ -228,7 +228,7 @@ float: none;
 
 @media screen and (min-width:480px and max-width:991px){
 .wrapper {
-	background:#f3f5f8;
+	background:#010101;
 	height:540px;
 }
 
