@@ -697,6 +697,7 @@ blockquote p{
 
 .team p {
 	color: #fafafa;
+	margin-bottom: 15px;
 }
 
 .team h2 {

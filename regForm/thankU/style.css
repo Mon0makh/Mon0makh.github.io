@@ -134,7 +134,7 @@ body {
   font-size: 3em;
 }
 .back .info i:before {
-  background: linear-gradient(40deg, #B40001, #B44040);
+  background: linear-gradient(40deg, #B40001, #B00000);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
