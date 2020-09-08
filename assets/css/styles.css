@@ -622,8 +622,13 @@ figure.vimeo-video{
 /** Team **/
 /*******************************/
 .image{
+
 	height: 15em;
 	width: 5em;
+
+}
+.img{
+	border-radius: 5px;
 }
 
 .md-close{
@@ -635,9 +640,7 @@ figure.vimeo-video{
 	background-color: #010101;
 }
 
-.speakers-wrap {
-	padding: 4% 0px 0px 0px;
-}
+
 
 ul.social-buttons {
 	list-style: none;
@@ -752,90 +755,6 @@ blockquote p{
 	border-left-color: #0c59d8;
 }
 
-div.avatar {
-	margin: 0 auto;
-}
-
-.avatar1 {
-	background-image: url('../img/team/team-01.jpg');
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-color: #ffffff;
-	width: 100px;
-	height: 100px;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	border-radius: 50%;
-	margin: 0 auto;
-}
-.avatar2 {
-	background-image: url('../img/team/team-02.jpg');
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-color: #ffffff;
-	width: 100px;
-	height: 100px;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	border-radius: 50%;
-	margin: 0 auto;
-}
-.avatar3 {
-	background-image: url('../img/team/team-03.jpg');
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-color: #ffffff;
-	width: 100px;
-	height: 100px;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	border-radius: 50%;
-	margin: 0 auto;
-}
-.avatar4 {
-	background-image: url('../img/team/team-01.jpg');
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-color: #ffffff;
-	width: 100px;
-	height: 100px;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	border-radius: 50%;
-	margin: 0 auto;
-}
-.avatar5 {
-	background-image: url('../img/team/team-02.jpg');
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-color: #ffffff;
-	width: 100px;
-	height: 100px;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	border-radius: 50%;
-	margin: 0 auto;
-}
-.avatar6 {
-	background-image: url('../img/team/team-03.jpg');
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-color: #ffffff;
-	width: 100px;
-	height: 100px;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	border-radius: 50%;
-	margin: 0 auto;
-}
-
-.folio {
-	max-width: 200em;
-	height: auto;
-	text-align: center;
-	padding:30px;
-
-}
 
 .tnc-folio{
 	height: auto;
