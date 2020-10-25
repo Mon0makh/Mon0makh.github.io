@@ -163,7 +163,7 @@ p {
 }
 
 .section-padding {
-	padding-top: 3%;
+	padding-top: 0%;
 
 }
 
@@ -212,14 +212,71 @@ hr {
 }
 
 .home-bg {
-    background: url("../img/bg_pattern.png") repeat scroll 0 0 rgba(1, 1, 1, 0.3);
-    cursor: move;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 2;
+	animation: 60s ease 0s normal none infinite back_animation;
+	background: url('../img/slider/1.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+@-webkit-keyframes back_animation {
+	0% {
+	-webkit-transform: scale(1);
+	}
+
+	50% {
+	-webkit-transform: scale(1.4);
+	}
+
+	100% {
+	-webkit-transform: scale(1) ;
+	}
+}
+@-moz-keyframes back_animation {
+	0% {
+	-moz-transform: scale(1);
+	}
+
+	50% {
+	-moz-transform: scale(1.4);
+	}
+
+	100% {
+	-moz-transform: scale(1) ;
+	}
+}
+@-o-keyframes back_animation {
+	0% {
+	-o-transform: scale(1);
+	}
+
+	50% {
+	-o-transform: scale(1.4);
+	}
+
+	100% {
+	-o-transform: scale(1) ;
+	}
+}
+@keyframes back_animation {
+	0% {
+	transform: scale(1);
+	}
+
+	50% {
+	transform: scale(1.4);
+	}
+
+	100% {
+	transform: scale(1) ;
+	}
 }
 .landing-text-pos, .home-bg {
     -moz-user-select: none;
@@ -339,6 +396,7 @@ hr {
 	clear: both;
 	text-align: center;
 	float: none;
+	margin-bottom: 20px;
 }
 .slides-navigation a{
 	color: #fff;
@@ -557,67 +615,6 @@ figure.vimeo-video{
 	transition: opacity 0.35s;
 }
 
-.block-hover {
-	
-	background: url("../img/gallery/gallery.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0);
-	height: 392px;
-	-webkit-transition: background .2s ;
-	-moz-transition: background .2s ;
-	-o-transition: background .2s ;
-	-ms-transition: background .2s;
-	transition: background .2s ;
-}
-
-.block-hover img {
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
-}
-
-.block-hover:hover {
-	background:none repeat scroll 0 0 rgb(175, 00, 01);
-	-webkit-transition: all .6s ;
-	-moz-transition: all .6s ;
-	-o-transition: all .6s ;
-	-ms-transition: all .6s;
-	transition: all .6s ;
-
-}
-.block-hover:hover span {
-	opacity:1;
-	text-align: center;
-    width: 100%;
-}
-.block-hover a {
-	display: block;
-	height: 81px;
-	left: calc(50% - 55px);
-	position: absolute;
-	top: calc(50% - 40.5px);
-	width: 110px;
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
-}
-
-.block-hover span {
-	color: #fff;
-    font-size: 1.5em;
-    left: 0;
-    letter-spacing: 0.1em;
-	opacity: 0;
-	position: absolute;
-	top: 35%;
-}
-
-.block-hover:hover img {
-	opacity: 0;
-	-webkit-transition: opacity 0.5s;
-	transition: opacity 0.5s;
-}
-
-.grid-gal figure.3d-gallery{
-	background: url("../assets/img/gallery/gallery.jpg") no-repeat scroll 0 0 / cover  rgba(0, 0, 0, 0);
-}
-
 /*******************************/
 /** Team **/
 /*******************************/
@@ -637,7 +634,7 @@ figure.vimeo-video{
     top: 10px;
 }
 .team {
-	background-color: #010101;
+	background-color: #000;
 }
 
 
@@ -1539,7 +1536,7 @@ a {
 }
 
 #portfolio {
-	background-color: #010101;
+	background-color: #000;
 }
 
 .planContainer {

@@ -38,7 +38,7 @@ body {
 }
 .required .form .label:after, .form .required .label:after {
   content: " *";
-  color: #E8474C;
+  color: #B40001;
   font-weight: normal;
   font-size: 0.75em;
   vertical-align: top;
@@ -49,7 +49,7 @@ body {
   line-height: normal;
   width: 100%;
   box-sizing: border-box;
-  background: rgba(3, 3, 3, 0.75);
+  background: rgba(5, 3, 3, 0.95);
   color: white;
   position: relative;
 }
@@ -106,7 +106,7 @@ body {
   color: #4E4E4E;
 }
 .form .checkbox-input:checked + label, .form .option-input:checked + label {
-  color: white;
+  color: #B40001;
 }
 
 .form .button {
@@ -192,7 +192,7 @@ body {
   width: 0.5em;
   height: 0.5em;
   border-style: solid;
-  border-color: white;
+  border-color: red;
   border-width: 0 3px 3px 0;
   position: absolute;
   top: 50%;
