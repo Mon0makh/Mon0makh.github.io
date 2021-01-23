@@ -1,0 +1,64 @@
+/* CSS only gallery (using radio inputs)
+ * See https://css-tricks.com/forums/topic/click-thumbnail-and-make-it-larger-image-image-gallery-wo-javascript/
+ * Support needed for IE7 & older - see https://css-tricks.com/child-and-sibling-selectors/
+ */
+body{
+	background-color: #191919;
+}
+.full-pic{
+	min-height: 35em;
+	max-height: 40em;
+}
+h2{
+	margin-left: 2em;
+	color: white;
+}
+.more{
+	position: absolute;
+	right: 25em;
+	color: white;
+}
+.wrapper {
+	width: 1180px;
+	position: relative;
+	border: 2px solid #B40001;
+	margin-left: 3em;
+}
+.wrapper .thumbnails {
+	width: 150px;
+	float: right;
+}
+.wrapper a {
+	margin: 2px;
+}
+.wrapper img {
+	border: 1px solid #000;
+}
+.wrapper label > img {
+	opacity: 0.3;
+}
+.wrapper label > img:hover {
+	opacity: 1;
+}
+.wrapper input {
+	display: none;
+}
+.wrapper input:checked + .full-image {
+	display: block;
+}
+.wrapper input:checked ~ img {
+	opacity: 1;
+}
+.wrapper .full-image {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.wrapper .description {
+	position: absolute;
+	width: 120%;
+	padding:5px;
+	background-color:#505050;
+
+}
