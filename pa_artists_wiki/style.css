@@ -13,13 +13,18 @@ h2{
 	margin-left: 2em;
 	color: white;
 }
+a{
+	color: #B40001;
+/*	text-decoration: none;*/
+	text-align: right;
+}
 .more{
 	position: absolute;
 	right: 25em;
 	color: white;
 }
 .wrapper {
-	width: 1180px;
+	width: 85%;
 	position: relative;
 	border: 2px solid #B40001;
 	margin-left: 3em;
@@ -43,7 +48,7 @@ h2{
 .wrapper input {
 	display: none;
 }
-.wrapper input:checked + .full-image {
+.wrapper input:checked + .full-image{
 	display: block;
 }
 .wrapper input:checked ~ img {
@@ -52,13 +57,25 @@ h2{
 .wrapper .full-image {
 	display: none;
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 2px;
+	left: -3px;
 }
 .wrapper .description {
+	color: white;
 	position: absolute;
-	width: 120%;
+	text-align: left;
+	width: auto;
 	padding:5px;
-	background-color:#505050;
-
+	left: 0;
+	right: 15px;
+	background-color:#000;
+}
+table, th, td {
+	text-align: left;
+	color: #fff;
+  	border-collapse: collapse;
+  	width: 20em;
+}
+.th-image{
+	width: 4em;
 }
