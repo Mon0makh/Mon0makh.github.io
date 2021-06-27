@@ -349,7 +349,7 @@ hr {
 .landing-text-pos {
 	cursor: move;
     position: absolute;
-    top: 35%;
+    top: 40%;
     width: 100%;
     z-index: 2;
 }
@@ -361,9 +361,9 @@ hr {
 
     font-family: 'Oswald', sans-serif;
 	font-size: 3.5em;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 0.2em;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 	padding: 0 10%;
 }
 
@@ -518,6 +518,7 @@ body{
 
 .intro {
 	background: #000;
+	border: solid 2px #b40001;
 }
 
 .about p{
