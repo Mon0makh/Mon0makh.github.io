@@ -518,7 +518,7 @@ body{
 
 .intro {
 	background: #000;
-	border: solid 2px #b40001;
+	/*border: solid 2px #b40001;*/
 }
 
 .about p{
