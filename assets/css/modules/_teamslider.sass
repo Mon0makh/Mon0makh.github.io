@@ -1,0 +1,183 @@
+.team_slider
+  position: relative
+  display: flex
+  width: 820px
+  max-width: 75%
+  height: 100%
+  flex-direction: column
+  justify-content: center
+  margin: 0 auto
+
+  @media (max-width: 1180px)
+    max-width: 100%
+
+  h2
+    margin: 0 0 20px 0
+    font-size: 30px
+    text-align: center
+
+
+.swiper-container
+  width: 100%
+  padding: 50px 0
+  overflow: visible
+
+  h2
+    text-align: left
+    margin: 0
+
+.swiper-slide
+  background-position: center
+  background-size: cover
+  width: 820px
+  background-color: rgba(255, 255, 255, 0)
+  overflow: hidden
+  border-radius: 8px
+  display: flex
+  align-items: center
+
+.picture
+  width: 420px
+  height: 320px
+  overflow: hidden
+
+  img
+    display: block
+    width: 100%
+    height: 100%
+    -o-object-fit: cover
+    object-fit: cover
+    border-radius: 10px
+
+.detail
+  padding: 25px 20px
+  font-weight: 600
+  text-align: left
+  color: #fff
+  width: 100%
+  line-height: 25px
+
+  h3
+    margin: 0
+    font-size: 20px
+
+  span
+    display: block
+    font-size: 16px
+    transition: 0.6s
+
+.swiper-button-next, .swiper-button-prev
+  background-size: 28px 65px
+  width: 25px
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev
+  right: -75px
+  left: auto
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M27,22L27,22L5,44l-2.1-2.1L22.8,22L2.9,2.1L5,0L27,22L27,22z' fill='%23d61313'/%3E%3C/svg%3E")
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next
+  left: -75px
+  right: auto
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M0,22L22,0l2.1,2.1L4.2,22l19.9,19.9L22,44L0,22L0,22L0,22z' fill='%23d61313'/%3E%3C/svg%3E")
+
+.swiper-slide-shadow-right::after, .swiper-slide-shadow-left::after
+  background: rgb(0, 0, 0)
+  background: linear-gradient(167deg, rgba(12, 12, 12, 1) 0%, rgba(12, 12, 12, 0.95) 49%)
+  content: ""
+  display: block
+  width: 820px
+  height: 320px
+  z-index: -1
+
+@media screen and (max-width: 992px)
+  .swiper-button-next, .swiper-container-rtl .swiper-button-prev
+    right: -30px
+    left: auto
+
+  .swiper-button-prev, .swiper-container-rtl .swiper-button-next
+    left: -30px
+    right: auto
+
+@media screen and (max-width: 768px)
+  .swiper-slide
+    width: 620px
+
+@media screen and (max-width: 600px)
+  .swiper-container h2
+    text-align: center
+
+
+  .swiper-button-prev, .swiper-button-next
+    display: none
+
+  .swiper-slide
+    width: 520px
+    margin: 0 auto
+    flex-direction: column
+
+ 
+
+  .swiper-slide-shadow-right::after, .swiper-slide-shadow-left::after
+    width: 520px
+
+  .picture
+    width: 77%
+    overflow: hidden
+
+    img
+      border-radius: 10px 10px 5px 5px
+
+  .detail
+    padding: 20px 15px
+    font-weight: 600
+    width: 77%
+    line-height: 20px
+    box-sizing: border-box
+    background-color: rgba(150, 30, 30, 0)
+    border-radius: 0 0 10px 10px
+    color: rgb(226, 222, 222)
+    text-align: center
+
+    span
+      font-size: 14px
+
+@media screen and (max-width: 480px)
+
+  .swiper-container h2
+    line-height: 30px
+  
+  .swiper-slide
+    width: 420px
+
+ 
+  .swiper-slide-shadow-right::after, .swiper-slide-shadow-left::after
+    background: linear-gradient(167deg, rgba(12, 12, 12, 0.95) 0%, rgba(12, 12, 12, 0.98) 49%)
+    height: 100%
+
+  .detail
+    padding: 10px
+    line-height: 20px
+
+    span
+      font-size: 13px
+
+@media screen and (max-width: 360px)
+  .swiper-container
+    padding: 30px 0 
+    
+    h2
+      line-height: 30px
+      font-size: 25px
+  
+  .swiper-slide
+    width: 320px
+
+   
+
+  .detail span
+    padding: 0px 5px
+    text-align: center
+
+@media screen and (max-width: 320px)
+  .swiper-slide
+    width: 290px
