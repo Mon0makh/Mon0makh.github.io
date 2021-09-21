@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Форма вступления</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700'>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <script type="text/javascript">var submitted=false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='thankU/index.html';}"></iframe>
+
+<!-- partial:index.partial.html -->
+<form class='form' action='https://docs.google.com/forms/u/2/d/e/1FAIpQLSc24cNGkNc1sjhnMIyi3WG__OU63baZ88MKAT9D2IK8HaMZSg/formResponse'method="post" target="hidden_iframe" onsubmit="submitted=true;">
+  <p class='field required'>
+    <label class='label required' for='name'>Имя и Фамилия</label>
+    <input class='text-input' id='name' name='entry.735217869' required type='text' value=''>
+  </p>
+  <p class='field required half'>
+    <label class='label' for='email'>E-mail</label>
+    <input class='text-input' id='email' name='entry.1147540101' required type='email'>
+  </p>
+  <p class='field half required'>
+    <label class='label required' for='phone'>Телефон с Telegram</label>
+    <input class='text-input' id='phone' name='entry.2035168363' required type='phone'>
+  </p>
+  <p class='field '>
+    <label class='label' for='select'>Специальность</label>
+    <select name='entry.333534082' class='select' id='select' >
+      <option selected value='' name='entry.333534082'></option>
+      <option value='Компьютерные науки (Computer Sciences)'>Компьютерные науки (Computer Sciences)</option>
+      <option value='Телекоммуникации'>Телекоммуникации</option>
+      <option value='Информационная безопасность'>Информационная безопасность</option>
+      <option value='Математическая экономика и анализ данных'>Математическая экономика и анализ данных</option>
+      <option value='Математическое и компьютерное моделирование'>Математическое и компьютерное моделирование</option>
+      <option value='Робототехника и мехатроника'>Робототехника и мехатроника</option>
+      <option value='Архитектура и Дизайн'>Архитектура и Дизайн</option>
+      <option value='Другое'>Другое</option>
+    </select>
+  </p>
+  <div class='field'>
+    <label class='label'>Курс</label>
+    <ul class='options' >
+      <li class='option'>
+        <input class='option-input' id='option-0' name='entry.611384488' type='radio' value='1 курс'>
+        <label class='option-label' for='option-0'>1 курс</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-1' name='entry.611384488' type='radio' value='2 курс'>
+        <label class='option-label' for='option-1'>2 курс</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-2' name='entry.611384488' type='radio' value='3 курс'>
+        <label class='option-label' for='option-2'>3 курс</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-3' name='entry.611384488' type='radio' value='4+ курс'>
+        <label class='option-label' for='option-3'>4+ курс</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-5' name='entry.611384488' type='radio' value='Выпускник'>
+        <label class='option-label' for='option-5'>Выпускник</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-6' name='entry.611384488' type='radio' value='Абитуриент'>
+        <label class='option-label' for='option-6'>Абитуриент</label>
+      </li>
+    </ul>
+  </div>
+  <div class='field'>
+    <label class='label'>Выбранные Сообщества: (Можно выбрать несколько)</label>
+    <ul class='checkboxes'>
+      <li class='checkbox'>
+        <input class='checkbox-input' id='choice-0' name='entry.1331750808' type='checkbox' value='DEV.HUB'>
+        <label class='checkbox-label' for='choice-0'>DEV.HUB</label>
+      </li>
+      <li class='checkbox'>
+        <input class='checkbox-input' id='choice-1' name='entry.1331750808' type='checkbox' value='HARD.HUB'>
+        <label class='checkbox-label' for='choice-1'>HARD.HUB</label>
+      </li>
+      <li class='checkbox'>
+        <input class='checkbox-input' id='choice-2' name='entry.1331750808' type='checkbox' value='SOC.HUB'>
+        <label class='checkbox-label' for='choice-2'>SOC.HUB</label>
+      </li>
+      <li class='checkbox'>
+        <input class='checkbox-input' id='choice-3' name='entry.1331750808' type='checkbox' value='ART.HUB'>
+        <label class='checkbox-label' for='choice-3'>ART.HUB</label>
+      </li>
+      <li class='checkbox'>
+        <input class='checkbox-input' id='choice-4' name='entry.1331750808' type='checkbox' value='GEEK.HUB'>
+        <label class='checkbox-label' for='choice-4'>GEEK.HUB</label>
+      </li>
+    </ul>
+  </div>
+  
+  <p class='field'>
+    <label class='label' for='about'>Расскажите о себе:</label>
+    <textarea class='textarea' cols='50' id='about' name='entry.1687252851' rows='4'></textarea>
+  </p>
+  
+  <p class='field '>
+    <input class='button' type='submit' value='Отправить'>
+  </p>
+</form>
+
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.customSelect/0.5.1/jquery.customSelect.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>

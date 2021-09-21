@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: transparent;
+  background-size: cover;
+  font: 14px/20px 'Raleway', sans-serif;
+}
+
+.slide-container {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .slide-container {
+    margin: auto -8.5em;
+
+  }
+}
+@media (max-width: 480px) {
+  .slide-container {
+    margin: auto -8.7em;
+
+  }
+}
+@media (max-width: 360px) {
+  .slide-container {
+    margin: auto -8.9em;
+
+  }
+}
+
+.wrapper {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.wrapper:focus {
+  outline: 0;
+}
+
+.small-hub {
+  background:  #010101;
+  width: 22em;
+  display: inline-block;
+  margin: auto;
+  border: 1px solid;
+  border-radius: 19px;
+  border-color: #B40101;
+  position: relative;
+  text-align: center;
+  /*box-shadow: 2px 1px 5px 5px #B40707;*/
+  z-index: 9999;
+
+}
+
+.small-hub__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.small-hub__image--devhub {
+  /*background: url("img/bg.jpg");*/
+}
+.small-hub__image--devhub img {
+  width: 21.8em;
+  position: center;
+
+}
+
+.small-hub__image--arthub {
+  /*background: #000;*/
+}
+.small-hub__image--arthub img {
+  width: 21.8em;
+  position: center;
+
+}
+
+.small-hub__image--geekhub {
+  /*background: #000;*/
+}
+.small-hub__image--geekhub img {
+  width: 21.8em;
+  position: center;
+
+}
+
+.small-hub__image--sochub {
+  /*background: #000;*/
+}
+.small-hub__image--sochub img {
+  width: 21.8em;
+  position: center;
+
+}
+
+.small-hub__image--hardhub {
+  /*background: #000;*/
+}
+.small-hub__image--hardhub img {
+  width: 21.8em;
+  position: center;
+
+}
+.small-hub__image--darkhub {
+  /*background: #000;*/
+}
+.small-hub__image--darkhub img {
+  width: 345px;
+  position: absolute;
+  top: -28px;
+  left: -10px;
+}
+
+
+.small-hub__unit-name {
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.small-hub__unit-description {
+  padding: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.slick-prev {
+  left: 100px;
+  z-index: 999;
+}
+
+.slick-next {
+  right: 100px;
+  z-index: 999;
+}
+@media (max-width: 480px) {
+  .slick-prev {
+    visibility: hidden;
+  }
+
+  .slick-next {
+    visibility: hidden;
+  }
+}
