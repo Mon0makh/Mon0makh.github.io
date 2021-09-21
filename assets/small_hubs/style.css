@@ -29,10 +29,13 @@
 }
 
 
+html {
+  background-color: #000;
+}
+
 body {
   font-family: sans-serif;
   margin: 20px;
-  background-color: #000;
 }
 
 h1{
