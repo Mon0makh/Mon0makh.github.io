@@ -212,7 +212,6 @@ hr {
 }
 
 .home-bg {
-	animation: 60s ease 0s normal none infinite back_animation;
 	background: url('../img/slider/1.jpg') no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -349,7 +348,7 @@ hr {
 .landing-text-pos {
 	cursor: move;
     position: absolute;
-    top: 35%;
+    top: 25%;
     width: 100%;
     z-index: 2;
 }
@@ -360,7 +359,7 @@ hr {
 .landing-text-pos h1{
 
     font-family: 'Oswald', sans-serif;
-	font-size: 3.5em;
+	font-size: 9em;
     font-weight: 700;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -369,7 +368,7 @@ hr {
 
 .landing-text-pos p{
 	color: #ffffff;
-    font-size: 1.5em;
+    font-size: 3em;
     letter-spacing: 0.2em;
     line-height: 1.5em;
     padding: 0 30%;
@@ -383,7 +382,7 @@ hr {
     font-size: 1em;
     font-weight: 600;
     letter-spacing: 0.2em;
-    margin: 2.9em auto 0;
+    margin: 10em auto 0;
     padding: 15px;
     text-transform: uppercase;
     width: 200px;
