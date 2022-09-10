@@ -78,7 +78,7 @@ body {
 }
 
 .landing-text-pos h1{
-	font-size:3em;
+	font-size:8em;
 }
 
 .block-hover {
@@ -370,7 +370,7 @@ body {
     font-size: 12.5px;
 }
 .landing-text-pos h1 {
-    font-size: 2.2em;
+    font-size: 5em;
 }
 #title_hr {
     margin: 1.8em auto 2em;
@@ -508,10 +508,11 @@ blockquote p {
     top: 31%;
 }
 .landing-text-pos h1 {
-    font-size: 1.8em;
+    color: black;
+    font-size: 4.5em;
 }
 .landing-text-pos p {
-    font-size: 1.1em;
+    font-size: 2em;
 }
 .d-sch,.fb{
     padding: 25px 0 ;

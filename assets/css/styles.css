@@ -35,7 +35,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a
 }
 
 body {
-	color: #7a7a7a;
+	color: #E2E2E2;
 	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
 	font-style: normal;
@@ -104,9 +104,13 @@ h6 {
 }
 
 p {
-	color: #fff;
+	/*color: #fff;*/
     font-size: 1.1em;
     line-height: 1.6em;
+}
+
+.blackC{
+	color: black;
 }
 
 .bottom-spacing{
@@ -367,7 +371,7 @@ hr {
 }
 
 .landing-text-pos p{
-	color: #ffffff;
+	
     font-size: 3em;
     letter-spacing: 0.2em;
     line-height: 1.5em;
