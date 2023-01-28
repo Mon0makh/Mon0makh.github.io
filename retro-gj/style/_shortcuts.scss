@@ -1,0 +1,153 @@
+.shortcut_icons{
+    margin: 15px;
+    cursor: pointer;
+    width: 80px;
+    height: 70px;
+    text-align: center;
+    z-index: 1;
+    position: fixed;
+    // padding: 10px;
+    font-family: $wsans;
+    user-select: none;
+    color: $wt;
+            
+    .shortcut_img{
+        width: 50px;
+        height: 50px;  
+    }
+    .shortcut_names{
+        font-size: 14px;
+        // user-select: none;         
+    }
+}    
+.shortcut_about{
+    top: 10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}   
+.shortcut_faq{
+    top: 110px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+.shortcut_rules{
+    top: 210px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+.shortcut_schedule{
+    top: 310px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}   
+.shortcut_reg{
+    top: 410px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.shortcut_awards{
+    top: 510px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.shortcut_sponsors{
+    top: 10px;
+    bottom: 0;
+    right: 0;
+    left: 90px;
+
+}
+.shortcut_social{
+    top: 110px;
+    bottom: 0;
+    right: 0;
+    left: 90px;
+
+}
+.shortcut_games{
+    top: 210px;
+    bottom: 0;
+    right: 0;
+    left: 90px;
+}
+
+
+@media screen and (max-width: 720px) {
+    .shortcut_icons{
+       
+        width: 80px;
+        height: 70px;
+       
+        .shortcut_img{
+            width: 40px;
+            height: 40px;  
+        }
+        .shortcut_names{
+            font-size: 14px;
+            // user-select: none;         
+        }
+    } 
+    .shortcut_about{
+        top: 10px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }   
+    .shortcut_faq{
+        top: 88px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    
+    }
+    .shortcut_rules{
+        top: 184px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    
+    }
+    .shortcut_schedule{
+        top: 276px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }   
+    .shortcut_reg{
+        top: 366px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    .shortcut_awards{
+        top: 457px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    .shortcut_social{
+        top: 88px;
+        bottom: 0;
+        right: 0;
+        left: 90px;
+    
+    }
+    .shortcut_games{
+        top: 182px;
+        bottom: 0;
+        right: 0;
+        left: 90px;
+    
+    }
+    
+          
+    
+}

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" Content="the Hub Web Studio">
+    <meta name="copyright" Content="the Hub ICA">
+    <meta name="description" Content="Первый ежегодный городской Game Jam в Казахстане от Satbayev University и the Hub ICA">
+    <meta name="keywords" Content ="алматы, almaty, game jam, гейм джем, игра, иры, университет, разработка игр, конкурс, прибыль, хакатон, hackathon, satbayev university, su, сатбаев, сатпаев, компьютеры, пк, ноутбуки, 2д, 3д, юнити, хаб, зе хаб, thehub, the hub, ретро, инди, издатели, издательство, грант, обучение, развитие, hub, 3d, 2d, art, development, indie, fun, веселье, приз">
+    <link rel="shortcut icon" href="../img/gamej2.png" type="image/x-icon">
+    <meta name="Publisher-Email" Content="bighub.info@gmail.com">
+    <meta name="robots" content="Index,follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Italianno&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syncopate:wght@400;700&family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Caveat:wght@400;500;600;700&family=Playball&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Outline|Londrina+Solid|Mr+Dafoe|Russo+One" rel="stylesheet">
+    <link rel="stylesheet" href="../style/main.css">
+    <title>Game Jam SU & theHub</title>
+</head>
+<body> 
+    <div class="container">
+        
+        <div class="pixel_screen" id="pixel_screen">
+
+            <div class="background_galaxy">
+
+                <div class="back_planet"><img src="../img/background/JUPITER1.png" alt="jupiter" class="back_jupiter"></div>
+                <div class="back_hills_grid">
+                    <div class="back_grid"></div>
+                    <div class="background_hills">
+                        <img src="../img/background/HillsPNG.png" alt="" class="back_hills">
+                    </div>
+                </div>
+                <div class="background_text_img">
+                    <img src="../img/background/logobk.png" alt="" class="back_logo">
+                    <div class="back_text">
+                        <div class="back_jam_week">
+                            <img src="../img/background/Jam.png" alt="Jam logo" class="jam">
+                            <p class="week">week</p>
+                        </div>
+                        <div class="satbayev_university">
+                            <p class="satbayev">Satbayev</p>
+                            <p class="university">University</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="shortcut_about shortcut_icons" id="about_sh">
+                <img src="../img/computer.png" alt="about" class="shortcut_img">
+                <p class="shortcut_names">About G.J.</p>
+            </div>
+            <div class="shortcut_faq shortcut_icons" id="faq_sh">
+                <img src="../img/faq.png" alt="faq" class="shortcut_img">
+                <p class="shortcut_names">FAQ</p>
+            </div>
+            <div class="shortcut_rules shortcut_icons" id="rules_sh">
+                <img src="../img/registe2r.png" alt="rules" class="shortcut_img">
+                <p class="shortcut_names">Rules</p>
+            </div>
+            <div class="shortcut_schedule shortcut_icons" id="schedule_sh">
+                <img src="../img/schedule.png" alt="schedule" class="shortcut_img">
+                <p class="shortcut_names">Schedule</p>
+            </div>
+            <div class="shortcut_reg shortcut_icons" id="reg_sh">
+                <img src="../img/register.png" alt="registration" class="shortcut_img">
+                <p class="shortcut_names">Upload</p>
+            </div>
+            <div class="shortcut_awards shortcut_icons" id="awards_sh">
+                <img src="../img/awards.png" alt="awards" class="shortcut_img">
+                <p class="shortcut_names">Awards</p>
+            </div>
+            <div class="shortcut_sponsors shortcut_icons" id="sponsor_sh">
+                <img src="../img/coin.png" alt="sponsor" class="shortcut_img">
+                <p class="shortcut_names">Sponsorship</p>
+            </div>
+            <div class="shortcut_social shortcut_icons" id="social_sh">
+                <img src="../img/social_n.png" alt="social networks" class="shortcut_img">
+                <p class="shortcut_names">Social networks</p>
+            </div>
+            <div class="shortcut_games shortcut_icons" id="games_sh">
+                <img src="../img/games.png" alt="games" class="shortcut_img">
+                <p class="shortcut_names">Games</p>
+            </div>
+            
+
+            <div class="desktop_win_about desktop_wins">
+                <div class="win_header" id="move_about">
+                    <div class="win_icon_text">
+                        <img src="../img/computer.png" alt="" class="win_header_icon">
+                        <p class="win_header_way">C:/satbayev/dev.hub/about</p>
+                    </div>
+                    <div class="win_control_btns">
+                        <img src="../img/min.png" alt="minimize window" class="min_windows_about">
+                        <img src="../img/max.png" alt="maximize window" class="max_windows_about">
+                        <img src="../img/close.png" alt="close window" class="close_windows_about">
+                    </div>
+                </div>
+
+                <div class="win_content" id="about_content">
+                    <img src="../img/map.png" alt="map">
+
+                    <p class="win_content_text">
+                        «SU Game Jam 2021» от Института Автоматики и Информационных технологий, Satbayev University и сообщества the Hub - это четырехдневное соревнование от независимых разработчиков игр со всей Республики, посвященное созданию игр! Мероприятие будет проходить оффлайн, и работы принимаются только от тех, кто участвовал на официальной площадке. «SU Game Jam 2021» пройдет в командном режиме, так что приходи с друзьями или найди команду прямо на геймджеме!
+                    </p>
+                    <ul class="win_content_list">
+                        Тебя ждет:
+                        <li><span>Консультация профессиональных специалистов</span></li>
+                        <li><span>Полезные мастер-классы и лекции от профессионалов</span></li>
+                        <li><span>Разработка игры за 48 часов в творческой креативной обстановке</span></li>
+                        <li><span>3 призовых места и 4 номинаций на победу</span></li>
+                        <li><span>Интересные знакомства</span></li>
+                        <li><span>Демонстрация твоей игры на широкую публику геймеров</span></li>
+                    </ul>
+                    <p class="win_content_text">
+                        А также, все то что сделает эти 4 дня незабываемыми: новые друзья, поддержка сообщества, безумные идеи, невероятный буст твоих скиллов, заливка в последнюю минуту и прохождение игр от множества других разработчиков страны! Цель «SU Game Jam 2021» - построить сильное сообщество игровых разработчиков и популяризировать индустрию разработки игр в нашей стране! До скорых встреч!
+
+                    </p>
+
+
+                </div>
+                <div class="win_footer" id="about_footer">
+                    <div class="win_footer_line long_line"></div>
+                    <div class="short_lines">
+                        <div class="win_footer_line short_line"></div>
+                        <div class="win_footer_line short_line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop_win_faq desktop_wins">
+                <div class="win_header" id="move_faq">
+                    <div class="win_icon_text">
+                        <img src="../img/faq.png" alt="" class="win_header_icon">
+                        <p class="win_header_way">C:/satbayev/dev.hub/faq</p>
+                    </div>
+                    <div class="win_control_btns">
+                        <img src="../img/min.png" alt="minimize window" class="min_windows_faq">
+                        <img src="../img/max.png" alt="maximize window" class="max_windows_faq">
+                        <img src="../img/close.png" alt="close window" class="close_windows_faq">
+                    </div>
+                </div>
+                <div class="win_content" id="faq_content">
+                    <p class="win_content_text text_question" id="question_1">
+                        <span class="show_text_question">+</span>
+                        Что мне делать, если у меня нет команды?
+                    </p>
+                    <p class="win_content_text text_answer" id="question_1_answer">
+                        <span class="show_text_answer">-</span>
+                        Вы можете подать заявку на участие в одиночку,
+                        и либо собрать команду на месте, либо присоединиться к уже существующим командам до старта разработки.
+                        Но, если вам не удастся найти команду,
+                        вы не сможете принять участие в конкурсе, но сможете принять участие в лекциях и воркшопах.
+                    </p>
+                    <p class="win_content_text text_question" id="question_2">
+                        <span class="show_text_question">+</span>
+                        У нашей команды совсем нет опыта, что делать?
+                    </p>
+                    <p class="win_content_text text_answer" id="question_2_answer">
+                        <span class="show_text_answer">-</span>
+                        ГеймДжем это отличный способ получить первый опыт, в конце концов, ведь все бывает в первый раз!
+                    </p>
+                    <p class="win_content_text text_question" id="question_3">
+                        <span class="show_text_question">+</span>
+                        Можем ли мы использовать  Unity3D/RPG MAker/Game Maker или любой другой игровой движок в разработке своего проекта?
+                    </p>
+                    <p class="win_content_text text_answer" id="question_3_answer">
+                        <span class="show_text_answer">-</span>
+                        Да, вы можете использовать любой игровой движок, если конечный проект будет
+                        доступен на платформах указанных в правилах ГеймДжема.
+                    </p>
+                    <p class="win_content_text text_question" id="question_4">
+                        <span class="show_text_question">+</span>
+                        Проект обязательно должен соответствовать тематике "Ретро"?
+                    </p>
+                    <p class="win_content_text text_answer" id="question_4_answer">
+                        <span class="show_text_answer">-</span>
+                        Да. Это необходимое ограничение для поощрения вашего творчества.
+                    </p>
+                    <p class="win_content_text text_question" id="question_5">
+                        <span class="show_text_question">+</span>
+                        Нам нужно приносить собственную технику (Ноутбуки, граф. планшеты и т.д.)?
+                    </p>
+                    <p class="win_content_text text_answer" id="question_5_answer">
+                        <span class="show_text_answer">-</span>
+                        Да, на фестиваль «SU Game Jam 2021» необходимо прийти со своей техникой. Формат BYOD (bring your own device).
+                    </p>
+                </div>
+                <div class="win_footer" id="faq_footer">
+                    <div class="win_footer_line long_line"></div>
+                    <div class="short_lines">
+                        <div class="win_footer_line short_line"></div>
+                        <div class="win_footer_line short_line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop_win_rules desktop_wins">
+                <div class="win_header" id="move_rules">
+                    <div class="win_icon_text">
+                        <img src="../img/registe2r.png" alt="" class="win_header_icon">
+                        <p class="win_header_way">C:/satbayev/dev.hub/rules</p>
+                    </div>
+                    <div class="win_control_btns">
+                        <img src="../img/min.png" alt="minimize window" class="min_windows_rules">
+                        <img src="../img/max.png" alt="maximize window" class="max_windows_rules">
+                        <img src="../img/close.png" alt="close window" class="close_windows_rules">
+                    </div>
+                </div>
+                <div class="win_content" id="rules_content">
+                    <ul class="win_content_list">
+                        <li>
+                            <span>
+                                Проект должен соответствовать тематике «SU Game Jam 2021», в данном случае – «Ретро». Однако интерпретация темы остается за участниками
+                            </span>
+                        </li>
+                        <li> <span>На разработку игры дается 48 часов</span></li>
+                        <li> <span>Платформа разработки ПК (Системы Windows/Linux/MacOs) или Веб.</span></li>
+                        <li><span>Обязательное присутствие на регистрации и закрытие мероприятия.</span></li>
+                        <li><span>Участвовать могут команды от 2х до 5ти человек.</span></li>
+                        <li><span>Разрешено использование заготовок или ранее созданных прототипов, если они были созданы участниками.</span></li>
+                        <li><span>Разрешено использование любых технологий разработки.</span></li>
+                        <li><span>Игры должны быть основаны на теме, а также в проекте должны присутствовать вещи, отсылающие на 3 из 6ти заданных дополнительных тем (темы вскрываются непосредственно перед началом «SU Game Jam 2021»)</span></li>
+                        <li><span>Разрешено использовать все публично доступные библиотеки и middleware</span></li>
+                        <li><span>Разрешены все утилиты для создания контента и утилиты для разработчиков (3dsmax, Photoshop, Blender и т. д.)</span></li>
+                        <li><span>К игре должен быть приложен исходный код, компилированный файл и отчет команды (Word, PowerPoint и т.д.), в котором дается аргументация проекта.</span></li>
+                        <li>
+                            <span>
+                                Нарушение интеллектуальной собственности и авторского права в проектах участников строго запрещено и может привести к дисквалификации, все используемые ассеты, созданные не участниками, должны быть свободны для некоммерческого использования, либо у вас должно быть письменное разрешение на их использование!
+                                Взаимодействие между командами не ограничено
+
+                            </span>
+                        </li>
+                        <li><span>Правообладателями игр, разрабатываемых в рамках фестиваля «SU Game Jam 2021», является Организатор и Генеральный спонсор.</span></li>
+                    </ul>
+                </div>
+                <div class="win_footer" id="rules_footer">
+                    <div class="win_footer_line long_line"></div>
+                    <div class="short_lines">
+                        <div class="win_footer_line short_line"></div>
+                        <div class="win_footer_line short_line"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="desktop_win_schedule desktop_wins">
+                <div class="win_header" id="move_schedule">
+                    <div class="win_icon_text">
+                        <img src="../img/schedule.png" alt="" class="win_header_icon">
+                        <p class="win_header_way">C:/satbayev/dev.hub/schedule</p>
+                    </div>
+                    <div class="win_control_btns">
+                        <img src="../img/min.png" alt="minimize window" class="min_windows_schedule">
+                        <img src="../img/max.png" alt="maximize window" class="max_windows_schedule">
+                        <img src="../img/close.png" alt="close window" class="close_windows_schedule">
+                    </div>
+                </div>
+                <div class="win_content" id="schedule_content">
+                    <p class="win_content_text text_date" id="date_1">
+                        <span class="show_text_date">+</span>
+                        3 декабря
+                    </p>
+                    <table class="date_table show_date_table show_date_table_on" id="date_1_table">
+                        <tr>
+                            <th>Время</th>
+                            <th>План</th>
+                        </tr>
+                        <tr>
+                            <td>10:00-11:00</td>
+                            <td>Сбор участников «SU Game Jam 2021»</td>
+                        </tr>
+                        <tr>
+                            <td>11:00-11:02</td>
+                            <td>Церемония открытия, выступление спикеров</td>
+
+                        </tr>
+                        <tr>
+                            <td>11:04-11:14</td>
+                            <td>Приветствие Ректора НАО «КазНИТУ им. К.Сатпаева» - Бегентаев М.М</td>
+                        </tr>
+                        <tr>
+                            <td>11:14-11:24</td>
+                            <td>Приветствие директора ИАиИТ - Ускенбаева Р.К.</td>
+                        </tr>
+                        <tr>
+                            <td>11:24-11:50</td>
+                            <td>Приветствие от МОН РК, МЦРиАП, АО «ТрансТелеком»</td>
+                        </tr>
+                        <tr>
+                            <td>11:50-12:00</td>
+                            <td>Презентация «SU Game Jam 2021». Представление программы открытия</td>
+                        </tr>
+                        <tr>
+                            <td>11:50-11:52</td>
+                            <td>Объявление заданий на сайте</td>
+                        </tr>
+                        <tr>
+                            <td>В течение дня</td>
+                            <td>Формирование команд, работа менторов.</td>
+                        </tr>
+                        <tr>
+                            <td>13:00-14:00</td>
+                            <td>Обед</td>
+                        </tr>
+                        <tr>
+                            <td>17:00-18:00</td>
+                            <td>Check-up с менторами</td>
+                        </tr>
+                    </table>
+                    <p class="win_content_text text_date" id="date_2">
+                        <span class="show_text_date">+</span>
+                        4 декабря
+                    </p>
+                    <table class="show_date_table date_table" id="date_2_table">
+                        <tr>
+                            <th>Время</th>
+                            <th>План</th>
+                        </tr>
+                        <tr>
+                            <td>В течение дня</td>
+                            <td>Работа над проектами</td>
+                        </tr>
+
+                        <tr>
+                            <td>12:00-13:00</td>
+                            <td>Спикер: Олег Цой (2D фриланс иллюстратор) Тема: «Аутсорс Иллюстратор в Казахстане»</td>
+                        </tr>
+                        <tr>
+                            <td>13:00-14:00</td>
+                            <td>Спикер: Айдос Рыскельдинов (основатель и разработчик iDos Games) Тема: «История успеха: выход на Unicorn Pitches и продвижение продукта»</td>
+                        </tr>
+
+                        <tr>
+                            <td>14:00-15:00</td>
+                            <td>Спикер: Алексей Новоселов Тема: «Техники UV маппинга для игровых ассетов»</td>
+                        </tr>
+
+                        <tr>
+                            <td>15:00-16:00</td>
+                            <td>Спикер: Данияр Оскенбай (основатель DFG, бренд и моушн-дизайнер, CGartist) Тема: «CG: Освещение, текстуринг и шумы»
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>17:00-18:30</td>
+                            <td>Check-up с менторами</td>
+                        </tr>
+                    </table>
+                    <p class="win_content_text text_question" id="date_3">
+                        <span class="show_text_question">+</span>
+                        5 декабря
+                    </p>
+                    <table class="date_table show_date_table" id="date_3_table">
+                        <tr>
+                            <th>Время</th>
+                            <th>План</th>
+                        </tr>
+                        <tr>
+                            <td>09:00 - 12:00</td>
+                            <td>Прием проектов «SU Game Jam» до 12 час 00 мин 05.12.2021г.</td>
+                        </tr>
+
+                        <tr>
+                            <td>12:00 - 18:00</td>
+                            <td>Работа жюри.</td>
+                        </tr>
+                    </table>
+                    <p class="win_content_text text_question" id="date_4">
+                        <span class="show_text_question">+</span>
+                        6 Декабря
+                    </p>
+                    <table class="date_table show_date_table" id="date_4_table">
+                        <tr>
+                            <th>Время</th>
+                            <th>План</th>
+                        </tr>
+                        <tr>
+                            <td>10:00 - 11:00</td>
+                            <td>Сбор участников «SU Game Jam 2021»</td>
+                        </tr>
+
+                        <tr>
+                            <td>11:00 - 12:10</td>
+                            <td>Приветствие ведущих и награждение/Закрытие фестиваля «SU Game Jam 2021»</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="win_footer" id="schedule_footer">
+                    <div class="win_footer_line long_line"></div>
+                    <div class="short_lines">
+                        <div class="win_footer_line short_line"></div>
+                        <div class="win_footer_line short_line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop_win_registration desktop_wins">
+                <div class="win_header" id="move_reg">
+                    <div class="win_icon_text">
+                        <img src="../img/register.png" alt="" class="win_header_icon">
+                        <p class="win_header_way">C:/satbayev/dev.hub/Upload</p>
+                    </div>
+                    <div class="win_control_btns">
+                        <img src="../img/min.png" alt="minimize window" class="min_windows_reg">
+                        <img src="../img/close.png" alt="close window" class="close_windows_reg">
+                    </div>
+                </div>
+                <div class="win_content win_form_content" id="reg_content">
+                    
+                    <p class="win_reg_text">Для отправки проектов используйте форму по ссылке ниже:</p>
+                    <br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc9jBFjPzwSBDAgcn9ngqTbmNx4KwhZrOQcOHruwo6ESYU_Ew/viewform?usp=sf_link">
+                        <button class="win_form_btn" type="button">
+                            <b>Google Drive</b>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="desktop_win_awards desktop_wins">
+                <div class="win_header" id="move_awards">
+                    <div class="win_icon_text">
+                        <img src="../img/awards.png" alt="" class="win_header_icon">
+                        <p class="win_header_way">C:/satbayev/dev.hub/awards</p>
+                    </div>
+                    <div class="win_control_btns">
+                        <img src="../img/min.png" alt="minimize window" class="min_windows_awards">
+                        <img src="../img/max.png" alt="maximize window" class="max_windows_awards">
+                        <img src="../img/close.png" alt="close window" class="close_windows_awards">
+                    </div>
+                </div>
+                <div class="win_content" id="awards_content">
+                    <p class="win_content_text">
+                        По завершению фестиваля, помимо трех призовых мест, победители будут определены также в следующих номинациях: 
+                    </p>
+                    <ul class="win_content_list">
+                        <li><span>Innovation – уникальность идеи;</span></li>
+                        <li><span>Design – визуальный стиль и эффект;</span></li>
+                        <li><span>Script – за лучший сюжет;</span></li>
+                        <li><span>Best Junior Team - за лучший школьный проект;</span></li>
+                    </ul>
+                    <p class="win_content_text">
+                        Приз за победу в любой из номинаций и подарки от спонсоров.
+                        Победители получат ценные призы и подарки от спонсоров. При этом один проект может стать победителем сразу во множестве номинаций!
+                    </p>
+                </div>
+                <div class="win_footer" id="awards_footer">
+                    <div class="win_footer_line long_line"></div>
+                    <div class="short_lines">
+                        <div class="win_footer_line short_line"></div>
+                        <div class="win_footer_line short_line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop_win_sponsors desktop_wins">
+                <div class="win_header" id="move_sponsor">
+                    <div class="win_icon_text">
+                        <img src="../img/coin.png" alt="" class="win_header_icon">
+                        <p class="win_header_way">C:/satbayev/dev.hub/sponsorship</p>
+                    </div>
+                    <div class="win_control_btns">
+                        <img src="../img/min.png" alt="minimize window" class="min_windows_sponsors">
+                        <img src="../img/max.png" alt="maximize window" class="max_windows_sponsors">
+                        <img src="../img/close.png" alt="close window" class="close_windows_sponsors">
+                    </div>
+                </div>
+                <div class="win_content win_content_inner_elems" id="sponsor_content">
+                    <div class="content_satbayev win_content_icons">
+                        <a href="https://ttc.kz" class="win_content_links" target="_blank"><img src="../img/ttc1.png" alt="ttc" class="win_content_img_main_sponsor"> <p class="content_names"><b>Transtelecom</b></p></a>
+                    </div>
+                    <div class="content_satbayev win_content_icons">
+                        <a href="https://www.gov.kz/memleket/entities/edu?lang=kk" class="win_content_links" target="_blank"><img src="../img/mon_orig.png" alt="MON" class="win_content_img"> <p class="content_names">МОН РК</p></a>
+                    </div>
+                    <div class="content_satbayev win_content_icons">
+                        <a href="https://www.gov.kz/memleket/entities/mdai?lang=ru" class="win_content_links" target="_blank"><img src="../img/mon.png" alt="MON" class="win_content_img"> <p class="content_names">МЦРИАП РК</p></a>
+                    </div>
+                    <div class="content_satbayev win_content_icons">
+                        <a href="https://satbayev.university" class="win_content_links" target="_blank"><img src="../img/su.png" alt="Satbayev" class="win_content_img"> <p class="content_names">Satbayev University</p></a>
+                    </div>
+                    <div class="content_satbayev win_content_icons">
+                        <a href="https://t.me/itech_su" class="win_content_links" target="_blank"><img src="../img/idet.png" alt="su idet" class="win_content_img"> <p class="content_names">ИАиИТ</p></a>
+                    </div>
+                    <div class="content_hub win_content_icons">
+                        <a href="https://thehub.su/" class="win_content_links" target="_blank"><img src="../img/theHub pixeled.png" alt="the hub" class="win_content_img"><p class="content_names">The Hub</p></a>
+                    </div>
+                    <div class="content_satbayev win_content_icons">
+                        <a href="" class="win_content_links" target="_blank"><img src="../img/parqour.png" alt="parqour" class="win_content_img"> <p class="content_names">Parqour</p></a>
+                    </div>
+                </div>
+                <div class="win_footer" id="sponsor_footer">
+                    <div class="win_footer_line long_line"></div>
+                    <div class="short_lines">
+                        <div class="win_footer_line short_line"></div>
+                        <div class="win_footer_line short_line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop_win_social desktop_wins">
+                <div class="win_header" id="move_social">
+                    <div class="win_icon_text">
+                        <img src="../img/social_n.png" alt="" class="win_header_icon">
+                        <p class="win_header_way">C:/satbayev/social/networks</p>
+                    </div>
+                    <div class="win_control_btns">
+                        <img src="../img/min.png" alt="minimize window" class="min_windows_social">
+                        <img src="../img/max.png" alt="maximize window" class="max_windows_social">
+                        <img src="../img/close.png" alt="close window" class="close_windows_social">
+                    </div>
+                </div>
+                <div class="win_content win_content_inner_elems" id="social_content">
+                    <div class="content_instagram win_content_icons">
+                        <a href="https://www.instagram.com/gamejam_su/" class="win_content_links" target="_blank"><img src="../img/instagram.png" alt="instagram" class="win_content_img"> <p class="content_names">Instagram</p></a>
+                    </div>
+                    <div class="content_telegram win_content_icons">
+                        <a href="https://t.me/gamejamsu" class="win_content_links" target="_blank"><img src="../img/telegram.png" alt="telegram" class="win_content_img"><p class="content_names">Telegram</p></a>
+                    </div>
+                    <div class="content_discord win_content_icons">
+                        <a href="https://discord.com/invite/6begvYwg5D" class="win_content_links" target="_blank"><img src="../img/discord.png" alt="discord" class="win_content_img"><p class="content_names">Discord</p></a>
+                    </div>
+                </div>
+                <div class="win_footer" id="social_footer">
+                    <div class="win_footer_line long_line"></div>
+                    <div class="short_lines">
+                        <div class="win_footer_line short_line"></div>
+                        <div class="win_footer_line short_line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop_win_games desktop_wins">
+                <div class="win_header" id="move_games">
+                    <div class="win_icon_text">
+                        <img src="../img/games.png" alt="" class="win_header_icon">
+                        <p class="win_header_way">C:/satbayev/games</p>
+                    </div>
+                    <div class="win_control_btns">
+                        <img src="../img/min.png" alt="minimize window" class="min_windows_games">
+                        <img src="../img/max.png" alt="maximize window" class="max_windows_games">
+                        <img src="../img/close.png" alt="close window" class="close_windows_games">
+                    </div>
+                </div>
+                <div class="win_content win_content_inner_elems" id="games_content">
+
+
+                    <div class="content_games_9 win_content_icons">
+                        <a href="https://drive.google.com/file/d/19hAuiyb1V0AtdAv3Kad_LS3UeM618FW4/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/first.png" alt="game3" class="win_content_img"><p class="content_names">Puppies in Socks - Left Alone</p></a>
+                    </div>
+
+                    <div class="content_games_2 win_content_icons">
+                        <a href="https://drive.google.com/file/d/12MH7D5K73x54BnBa5AH7IaVl-iiBj36j/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/second.png" alt="NETA" class="win_content_img"><p class="content_names">Thirty Times - NETA</p></a>
+                    </div>
+
+                    <div class="content_games_24 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1lj6VX-s7cuPsTsOodvr8wMjGlIvM8r3z/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/third.png" alt="game3" class="win_content_img"><p class="content_names">ProjectTile - ProjectDiVi</p></a>
+                    </div>
+
+
+                    <div class="content_games_1 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1DT45QhSn7tvu6wJaxPDoh4nPP9xJf_FF/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game1" class="win_content_img"> <p class="content_names">ToU Games - M.I.T.M.</p></a>
+                    </div>
+                    <div class="content_games_3 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1jc5nkuwyqJ_pOLEmeaTZUADmqSPXA7ws/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">Synthub - All is Good</p></a>
+                    </div>
+                    <div class="content_games_4 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1UeGBgHDmZqhCphjkNvXjpoCuHaBiGRVG/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">Shadow Fighters - Гвитея</p></a>
+                    </div>
+                    <div class="content_games_5 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1pmqP1bsSrDD8t8MP5AjHmJGmkiJ8NFzn/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">Rio Team - car</p></a>
+                    </div>
+                    <div class="content_games_6 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1oEe6nwudfWkI9kDoXNvTtScTv6y55g8l/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">Randomizer - Space Shooter</p></a>
+                    </div>
+                    <div class="content_games_7 win_content_icons">
+                        <a href="https://drive.google.com/file/d/17J6O5Jenmu9vCTHOYCjf6FGrp-6kPVfW/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">Ramen - To Be</p></a>
+                    </div>
+
+                    <div class="content_games_8 win_content_icons">
+                        <a href="https://docs.google.com/document/d/1iBoVjz8oylu-etrk1YCQlCFPijecO7tP/edit?usp=sharing&ouid=113959737245921972149&rtpof=true&sd=true" class="win_content_links" target="_blank"><img src="../img/web_logo.png" alt="game3" class="win_content_img"><p class="content_names">DJT Game - Infinity Vally</p></a>
+                    </div>
+
+
+                    <div class="content_games_10 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1X5YYnhBoe27F-uUXAv3ggSer6wdI2p1H/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">Neon Genesis - Game</p></a>
+                    </div>
+
+
+                    <div class="content_games_11 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1L2FtlEaK5B5tPduN6FAWGQqYX0KwxSPq/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">KeKDev - Steels</p></a>
+                    </div>
+
+
+
+                    <div class="content_games_12 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1Zp82xi34YQAJPIovuO1Djq5gZpnF-ZjB/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">Gaming and Youth - FirSTTT Hero</p></a>
+                    </div>
+
+
+                    <div class="content_games_13 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1gW-e53kDu-0BDWECNwoYYBxTKijV46Hw/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">demotivators - Once upon in the dreams</p></a>
+                    </div>
+
+
+                    <div class="content_games_14 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1eaGXoxEaqJdz_osQkJDOBrjPa2n4_jtq/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">Deep Dark Fantasies - Space Shooter</p></a>
+                    </div>
+
+
+                    <div class="content_games_15 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1u-lrqsJn6VcJpc6arPsatgwLgFPCS01L/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">Cyber Mechanics - Game</p></a>
+                    </div>
+
+
+                    <div class="content_games_16 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1v1dwPCxnfHKEsxx9tWkVH9nIdqlwMolT/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">Cat Game Project - Century Madness</p></a>
+                    </div>
+
+
+                    <div class="content_games_17 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1bQbQg90ktFuBTQOlkeeZtzbDjMNbBtfk/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">Best Junior's - Battle Robots</p></a>
+                    </div>
+
+                    <div class="content_games_18 win_content_icons">
+                        <a href="https://drive.google.com/file/d/11vAeh1fhrP_yog_ynMz9IBELGCL2xFa8/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">Отряд Энтузиастов - Game</p></a>
+                    </div>
+
+                    <div class="content_games_19 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1bIvlw4AwLlbuasJAvsYuW3biykczJFpu/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">Auezov.G - Game</p></a>
+                    </div>
+
+                    <div class="content_games_20 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1RGuaBxcKdEZQ0qbksbnFWMS8qcWhfreI/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">ШАГ - Centralia</p></a>
+                    </div>
+
+
+                    <div class="content_games_21 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1WXpuLxo-mhMiNeoc9OI3opJj5SIoYXyF/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">8BIT - QAZ SPACE ADVENTURE</p></a>
+                    </div>
+
+
+                    <div class="content_games_22 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1ssu6rMrKcEPRHs95sIHaoKOl54Di2ezf/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">BBGames - DreamTail</p></a>
+                    </div>
+
+                    <div class="content_games_23 win_content_icons">
+                        <a href="https://drive.google.com/file/d/1HVTwDoHPcTz2JUUnDS5HR3qvaLKmA5Cu/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">JIC games - PimPom</p></a>
+                    </div>
+
+                    <div class="content_games_25 win_content_icons">
+                        <a href="https://drive.google.com/file/d/19bI60D0_VZ261-r2HRzRqarGMWOIemJK/view?usp=sharing" class="win_content_links" target="_blank"><img src="../img/unity.png" alt="game3" class="win_content_img"><p class="content_names">Sherhan - Proudeuer</p></a>
+                    </div>
+
+                </div>
+                <div class="win_footer" id="games_footer">
+                    <div class="win_footer_line long_line"></div>
+                    <div class="short_lines">
+                        <div class="win_footer_line short_line"></div>
+                        <div class="win_footer_line short_line"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <header class="header">
+                <div class="header_wrapper">
+                    <div class="menu_panel">
+                        <div class="windows">
+                            <div class="win_btn general_win">
+                                <img src="../img/win95start.png" alt="win59">
+                                <p>Start</p>
+                            </div>
+                            <div class="win_about general_win">
+                                <img src="../img/computer.png" alt="computer">
+                                <p>About G.J.</p>
+                            </div>
+                            <div class="win_faq  general_win">
+                                <img src="../img/faq.png" alt="faq">
+                                <p>FAQ</p>
+                            </div>
+                            <div class="win_sponsors  general_win">
+                                <img src="../img/coin.png" alt="sponsors">
+                                <p>Sponsorship</p>
+                            </div>
+                            <div class="win_social  general_win">
+                                <img src="../img/social_n.png" alt="social networks">
+                                <p>Social</p>
+                            </div>
+                            <div class="win_rules  general_win">
+                                <img src="../img/registe2r.png" alt="rules">
+                                <p>Rules</p>
+                            </div>
+                            <div class="win_schedule  general_win">
+                                <img src="../img/schedule.png" alt="schedule">
+                                <p>Schedule</p>
+                            </div>
+                            <div class="win_reg  general_win">
+                                <img src="../img/register.png" alt="registration">
+                                <p>Upload</p>
+                            </div>
+                            <div class="win_awards  general_win">
+                                <img src="../img/awards.png" alt="awards">
+                                <p>Awards</p>
+                            </div>
+                            <div class="win_games  general_win">
+                                <img src="../img/games.png" alt="games">
+                                <p>Games</p>
+                            </div>
+
+                        </div>
+                        <div class="time_and_lang">
+                            <div class="lang">
+                                <img src="../img/rus.png" alt="rus" class="ch_lang" title="Russian">
+                            </div>
+                            <div class="cloak">
+                                <div class="time"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="menu_windows">
+                <div class="menu_windows_wrapper">
+                    <div class="name_line">
+                        <p>Dev.HUB</p>
+                    </div>
+                    <div class="prog_list">
+                        <ul class="prog_list_sections">
+                            <li class="about" id="about"><img src="../img/computer.png" alt="computer" class="prog_list_icons"><p>About G.J.</p></li>
+                            <li class="faq" id="faq"><img src="../img/faq.png" alt="faq" class="prog_list_icons"><p>FAQ</p></li>
+                            <li class="sponsor" id="sponsor"><img src="../img/coin.png" alt="sponsor" class="prog_list_icons"><p>Sponsorship</p></li>
+                            <li class="social" id="social"><img src="../img/social_n.png" alt="social networks" class="prog_list_icons"><p>Social networks</p></li>
+                            <li class="rules" id="rules"><img src="../img/registe2r.png" alt="rules" class="prog_list_icons"><p>Rules</p></li>
+                            <li class="schedule" id="schedule"><img src="../img/schedule.png" alt="schedule" class="prog_list_icons"><p>Schedule</p></li>
+                            <li class="registration" id="reg"><img src="../img/register.png" alt="registration" class="prog_list_icons"><p>Upload</p></li>
+                            <li class="awards" id="awards"><img src="../img/awards.png" alt="awards" class="prog_list_icons"><p>Awards</p></li>
+                            <li class="games" id="games"><img src="../img/games.png" alt="games" class="prog_list_icons"><p>Games</p></li>
+                        </ul>
+                    </div>
+                    <div class="prog_list sponsor_prog_list">
+                        <ul class="prog_list_sections">
+
+                            <li class="satbayev" id="su"><p>Ген.Cпонсор:</p></li>
+
+
+                            <li class="satbayev" id="su"><a href="https://ttc.kz" target="_blank" class="sponsor_links"><img src="../img/ttc.png" alt="ttc" class="prog_list_icons"><p><b>Transtelecom</b></p></a></li>
+
+                            <li class="satbayev" id="su"><p>Спонсоры:</p></li>
+
+                            <li class="satbayev" id="su"><a href="https://satbayev.university" target="_blank" class="sponsor_links"><img src="../img/su.png" alt="su" class="prog_list_icons"><p>Satbayev U.</p></a></li>
+
+
+                            <li class="satbayev" id="su"><a href="https://www.gov.kz/memleket/entities/edu?lang=kk" target="_blank" class="sponsor_links"><img src="../img/mon_orig.png" alt="МОН РК" class="prog_list_icons"><p>МОН РК</p></a></li>
+                            <li class="satbayev" id="su"><a href="https://www.gov.kz/memleket/entities/mdai?lang=ru" target="_blank" class="sponsor_links"><img src="../img/mon.png" alt="МЦРИАП РК" class="prog_list_icons"><p>МЦРИАП РК</p></a></li>
+
+                            <li class="hub" id="hub"><a href="https://thehub.su/" target="_blank" class="sponsor_links"><img src="../img/theHub pixeled.png" alt="the Hub" class="prog_list_icons"><p>TheHub</p></a></li>
+
+
+                            <li class="satbayev" id="su"><a href="" target="_blank" class="sponsor_links"><img src="../img/parqour.png" alt="Parqour" class="prog_list_icons"><p>Parqour</p></a></li>
+
+
+                            <li class="back_arrow" id="back"><a href=""></a><img src="../img/back.png" alt="back" class="prog_list_icons"></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="lang_panel">
+                <div class="lang_panel_wrapper">
+                    <a href="../kz/index.html"><img src="../img/kaz.png" alt="Kaz" class="langs" title="KZT"></a>
+                    <a href=""><img src="../img/rus.png" alt="Rus" class="langs" title="RUS"></a>
+                    <a href="../en/index.html"><img src="../img/eng.png" alt="Eng" class="langs" title="ENG"></a>
+                </div>
+
+            </div>
+
+            <div class="form_info_win">
+                <div class="form_info_header">
+                    <div class="info_icon_text">
+                        <p class="info_hesder_name">Windows 95 info</p>
+                    </div>
+                    <div class="info_control_btns">
+                        <img src="../img/close.png" alt="close window" class="close_windows_info">
+                    </div>
+                </div>
+                <div class="form_info_content">
+                    <div class="text_content">
+                        <img src="../img/info.png" alt="info" class="info_img">
+                        <p>Регистрация прошла успешно</p>
+                    </div>
+                    <button type="submit" class="submit_content">OK</button>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div class="loader" id="page_prelodaer">
+        <div class="loader_wrapper">
+            <div class="load_pseudo_icon">
+                <p>MyHubSoft</p>
+            </div>
+           <div class="load_text_content">
+               <img src="../img/windows95ru.png" alt="win 95" class="win_95_ico">
+               <div class="load_text">
+                   <p>Satbayev</p>
+                   <h1>Wоndows <span>95</span></h1>
+                   <h3>Game Jam Week</h3>
+               </div>
+           </div>
+           <div class="load_animation_content">
+               <div class="load_bar">
+                   <div class="loading_left loading_line">
+                   </div>
+                   <div class="loading_right loading_line"></div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/loader.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/object_move.js"></script>
+    <script src="../js/mobile_obj_move.js"></script>
+   </body>
+</html>

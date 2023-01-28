@@ -1,0 +1,589 @@
+
+.header{
+    position: fixed;
+    // top: 0;
+    bottom: 0;
+    background-color: $win;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    padding: 4px;
+    .header_wrapper{
+        .menu_panel{
+            display: flex;
+            justify-content: space-between;
+            font-family: $pix;
+            color: $bk;
+            cursor: default;
+            .windows{
+                white-space: nowrap;
+                display: flex;
+                .general_win{
+                    background-color: $win;
+                    border-width: 2px;
+                    border-style: solid;
+                    border-color: $wt $bk $bk $wt;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 4px;
+                    margin-right: 10px;
+                    width: 135px;
+                    img{
+                        display: block;
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 8px;
+                    }
+                    p{
+                        font-size: 18px;
+                        margin-bottom: 2px;
+                        letter-spacing: 1px;
+                    }
+                
+                }
+                .win_reg {
+                    p{
+                        font-size: 15px;
+                    
+                    }
+
+                }
+               
+                .win_btn{
+                    width: 90px;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                    p{
+                        
+                        font-weight: bolder;
+                        letter-spacing: -1px;
+                    }
+                }
+                .win_btn_clicked{
+                    border-color: $bk $wt $wt $bk;
+                }
+                
+                .win_about{
+                    display: none;
+                }
+                .win_faq{
+                    display: none;
+                }
+                .win_rules{
+                    display: none;
+                }
+                .win_schedule{
+                    display: none;
+                }
+                .win_reg{
+                    display: none;
+                }
+                .win_awards{
+                    display: none;
+                }
+                .win_sponsors{
+                    display: none;
+                    p{
+                        font-size: 16px;
+                    }
+                }
+                .win_social{
+                    display: none;
+                }
+                .win_games{
+                    display: none;
+                }
+                .win_about_on{
+                    display: flex;
+                    border-color: $bk $wt $wt $bk;
+                }
+                .win_faq_on{
+                    border-color: $bk $wt $wt $bk;
+                    display: flex;
+                }
+                .win_rules_on{
+                    border-color: $bk $wt $wt $bk;
+                    display: flex;
+                } 
+                .win_schedule_on{
+                    border-color: $bk $wt $wt $bk;
+                    display: flex;
+                }
+                .win_reg_on{
+                    border-color: $bk $wt $wt $bk;
+                    display: flex;
+                }
+                .win_awards_on{
+                    border-color: $bk $wt $wt $bk;
+                    display: flex;
+                }
+                .win_sponsors_on{
+                    border-color: $bk $wt $wt $bk;
+                    display: flex;
+                }
+                .win_social_on{
+                    border-color: $bk $wt $wt $bk;
+                    display: flex;
+                }
+                .win_games_on{
+                    border-color: $bk $wt $wt $bk;
+                    display: flex;
+                }
+                .win_hide{
+                    border-color:  $wt $bk $bk $wt;
+                }
+            }
+            .time_and_lang{
+                display: flex;
+                align-items: center;
+                .lang{
+                    cursor: pointer;
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 30px; 
+                    .ch_lang{ 
+                        width: inherit;
+                        height: inherit;
+                    }   
+                }
+                .cloak{
+                    border-width: 2px;
+                    border-style: solid;
+                    border-color: grey white white grey;
+                    width: 152px;
+                    text-align: center;
+                    .time{
+                        font-size: 20px;
+                        font-weight: lighter;
+                    }
+    
+                }
+
+            }
+            
+        }
+
+    }
+}
+.menu_windows{
+    padding: 2px;
+    background-color: $win;
+    z-index: 2;
+    position: fixed;
+    bottom: 40px;
+    right: 0;
+    left: 0;
+    width: 170px;
+    height: 375px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $wt $bk $bk $wt;
+    margin-left: 3px;
+    display: none;
+    font-family: $pix;
+    .menu_windows_wrapper{
+        display: flex;
+        justify-content: space-between;
+        .name_line{
+            width: 35px;
+            height: 370px;
+            background-color: rgb(186,11,11);
+            background: linear-gradient(135deg, rgba(133,7,7,1) 14%, rgba(149,13,13,1) 29%, rgba(213,11,11,1) 90%);
+            text-align:start;
+            p{
+                transform: rotate(-90deg);
+                margin-top: 196px;
+                font-size: 18px;
+                font-weight: bolder;
+                letter-spacing: 2px;
+                color: $wt;
+            }
+        }
+        .prog_list{
+            width: 100%;
+          
+            .prog_list_sections{
+                list-style-type: none;
+                li{
+                    padding: 5px;
+                    margin-bottom: 5px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    .prog_list_icons{
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 5px;
+                    }
+                    p{
+                        color: $bk;
+                        font-size: 13px;
+                    }
+               
+                }
+                li:hover{
+                    background-color: rgb(186,11,11);
+                 
+                    p{
+                        color: $wt;
+                        user-select: none;
+                    
+                    }
+                }
+                .games{
+                    display: none;
+                }
+
+            }
+    
+        }
+        .sponsor_prog_list{
+            z-index: 1;
+            position: fixed;
+            width: 134px;
+            left: 43px;
+            height: 360px;
+            background-color: $win;
+            display: none;
+            .prog_list_sections{
+                .sponsor_links{
+                    text-decoration: none;
+                    display: flex;
+                    width: 100%;
+                    .prog_list_icons{
+
+                    }
+                }
+                .back_arrow{
+                 user-select: none;
+                 margin-top: 1em;
+                    img{
+                        transform: rotate(90deg);
+                    }
+                }
+                .back_arrow:hover{
+                    background-color: rgba(255, 255, 255, 0);
+                }
+            }
+        }
+        .sponsor_prog_list_on{
+            display: block;
+        }
+
+    }
+}
+.menu_windows_on{
+    display: block;
+}
+.lang_panel{
+    cursor: pointer;
+    background-color: $win;
+    width: 34px;
+    padding: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color:  $bk $wt $wt $bk  ; 
+    position: fixed;
+    // top: 565px;
+    bottom: 40px;
+    right: 185px;
+    // left: 850px;
+    display: none;
+    text-align: center;
+    .lang_panel_wrapper{
+        display: flex;
+        flex-direction: column;
+        .langs{
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
+.lang_panel_on{
+    display: block;
+
+}
+
+
+// responsoves
+
+@media screen and (max-width: 768px) {
+    .header{
+        .header_wrapper{
+            .menu_panel{
+                .windows{
+                    .general_win{
+                        width: 110px;
+                        margin-right: 5px;
+                        p{
+                            font-size: 13px;
+                        }
+                    }
+                    .win_reg {
+                        p{
+                            font-size: 11px;
+                        
+                        }
+    
+                    }
+                    .win_btn{
+                        width: 90px;
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+            
+                }
+                .time_and_lang{
+                    .lang{
+                        cursor: pointer;
+                        width: 35px;
+                        height: 35px;
+                        margin-right: 30px; 
+                        .ch_lang{ 
+                            width: inherit;
+                            height: inherit;
+                        }   
+                    }
+                    .cloak{
+                        display: none;
+                        
+        
+                    }
+    
+                }
+                    
+                
+            }
+        }
+    }
+    .lang_panel{
+        bottom: 40px;
+        right: 30px;
+        .lang_panel_wrapper{
+            .langs{
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+    .header_top{
+        display: block;
+       
+    }
+}
+@media screen and (max-width: 576px) {
+    .header{
+        .header_wrapper{
+            .menu_panel{
+                .windows{
+                    .general_win{
+                        padding: 0 2px;
+                        width: 100px;
+                        img{
+                            
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 6px;
+                        }
+                        p{
+                            font-size: 11px;
+                            font-weight: bolder;
+                        }
+                    
+                    }
+                    .win_reg {
+                        p{
+                            font-size: 10px;
+                        }
+                    }
+                    .win_btn{
+                        width: 80px;
+                        img{
+                            width: 25px;
+                            height: 25px;
+                        }
+                        p{
+                            font-size: 14px;
+                            font-weight: bolder;
+                            letter-spacing: -1px;
+                        }
+                    }
+                }
+                .time_and_lang{
+                    .lang{
+                        margin-right: 20px; 
+                    }
+                    .cloak{
+                        display: none;
+                    }
+    
+                } 
+            }
+
+        }
+
+    }
+    .menu_windows{
+        bottom: 35px;
+    }
+    .lang_panel{
+        bottom: 40px;
+        right: 22px;
+        .lang_panel_wrapper{
+            .langs{
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+   
+    
+}
+
+@media screen and (max-width: 480px) {
+    .header{
+        .header_wrapper{
+            .menu_panel{
+                .windows{
+                    .general_win{
+                        // width: 50px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        // width: 100%;
+                    
+                    }
+                    .win_btn{
+                        width: 70px;  
+                    }
+                }
+                .time_and_lang{
+                    .lang{
+                        cursor: pointer;
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 15px; 
+                        .ch_lang{ 
+                            width: inherit;
+                            height: inherit;
+                        }   
+                    }
+                    .cloak{
+                        display: none;
+                        
+        
+                    }
+    
+                }
+                
+               
+            }
+
+        }
+
+    }
+    .lang_panel{
+        right: 12px;
+        bottom: 32px;
+        width: 32px;
+        .lang_panel_wrapper{
+            
+            .langs{
+                width: 25px;
+                height: 25px;
+            }
+        }
+        
+    }
+    
+}
+
+@media screen and (max-width: 420px) and (min-width: 320px){
+    .header{
+        .header_wrapper{
+            .menu_panel{
+                .windows{
+                    .general_win{
+                        width: 20px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        margin-right: 8px;
+                        
+                        p{
+                            display: none;
+                        }
+                    
+                    }
+                    .win_btn{
+                        width: 70px;
+                        p{
+                            display: block;
+                        }
+                    }
+                }
+                .time_and_lang{
+                    .lang{
+                        cursor: pointer;
+                        .ch_lang{ 
+                            width: inherit;
+                            height: inherit;
+                        }   
+                    }
+                    .cloak{
+                        display: none;
+                        
+        
+                    }
+    
+                }
+                
+            }
+        }
+    }
+    .lang_panel{
+        
+        .lang_panel_wrapper{
+            
+            .langs{
+                margin: 6px 0;
+                width: 25px;
+                height: 25px;
+            }
+        }
+        
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 320px){
+    
+    .header{
+        .header_wrapper{
+            .menu_panel{
+                .time_and_lang{
+                    .lang{
+                        display: none;
+                        cursor: pointer;
+                        .ch_lang{ 
+                            width: inherit;
+                            height: inherit;
+                        }   
+                    }
+                    .cloak{
+                        display: none;
+                        
+        
+                    }
+    
+                }
+                
+            }
+        }
+    }
+
+}

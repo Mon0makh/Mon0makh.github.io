@@ -1,0 +1,16 @@
+.container{
+    .pixel_screen::before{
+        content: "";
+        background: repeating-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 2px, transparent 2px, transparent 4px);
+        z-index: 4;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: block;
+        pointer-events: none;
+        
+    }
+    display: none;
+}

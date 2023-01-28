@@ -1,0 +1,303 @@
+.loader{
+    background-image: url(../img/win59clouds.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    padding: 10px;
+    font-family: $roboto;
+    user-select: none;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    // margin: 0 auto;
+    .loader_wrapper{
+        color: $bk;
+        font-family: $wsans;
+        .load_pseudo_icon{
+            font-weight: bolder;
+            font-style: italic;
+            font-size: 40px;
+            letter-spacing: -2px;
+            text-align: right;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .load_pseudo_icon:after{
+            content: "\00a9";
+            font-size: 10px;
+            position: fixed;
+            top: 24px;
+            bottom: 0;
+            left: 0;
+            right: 10px;
+        }
+        .load_text_content{
+            margin: 70px 0;
+            text-align: center;
+            .win_95_ico{
+                width: 380px;
+                height: 285px;
+            }
+            .load_text{
+                width: 470px;
+                margin: 0 auto;
+                p{
+                    color: $wt;
+                    letter-spacing: 1px;
+                    font-size: 25px;
+                    text-align: left;
+                    
+                }
+                h1{
+                    
+                    font-size: 80px;
+                    font-weight: bolder;
+                    letter-spacing: -2px;
+                    line-height: 60px;
+                   
+                    span{
+                        color: $wt;
+                        font-weight: lighter;
+                        font-size: 80px;
+                        margin-left: -20px;
+                    }
+                }
+                h3{
+                    font-size: 28px;
+                    letter-spacing: -1px;
+                    line-height: 25px;
+                    text-align: right;
+                    margin-right: 15px;
+                    font-weight: bolder;
+                }
+                
+            }
+        }
+        .load_animation_content{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            
+            .load_bar{
+                height: 25px;
+                background-color: #b0bac3;
+                display: flex;
+                overflow: hidden;
+                .loading_line{
+                    display: block;
+                    width: 400px;
+                    height: 150px;
+                    animation-name: load_anim;
+                    animation-timing-function: linear;
+                    animation-duration: 3s;
+                    animation-fill-mode: forwards;
+                    animation-iteration-count: infinite;
+                    transform: translate(-1300px);
+                }
+                .loading_left{
+                    background: rgb(176,186,195);
+                    background: linear-gradient(99deg, rgba(176,186,195,1) 7%, rgba(161,174,196,1) 19%, rgba(135,153,197,1) 39%, rgba(90,138,186,1) 58%, rgba(77,128,185,1) 71%, rgba(80,130,189,1) 100%);
+                }
+                .loading_right{
+                    background: rgb(176,186,195);
+                    background: linear-gradient(277deg, rgba(176,186,195,1) 7%, rgba(161,174,196,1) 19%, rgba(135,153,197,1) 39%, rgba(90,138,186,1) 58%, rgba(77,128,185,1) 71%, rgba(80,130,189,1) 100%);
+                }
+                @keyframes load_anim{
+                    0%{
+                        transform: translate(-1300px);
+
+
+                    }
+                    100%{
+                        transform: translate(1300px);
+
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+
+    
+
+    
+}
+.off_loader{
+    visibility: hidden;
+    z-index: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+@media screen and (max-width: 480px) {
+    .loader{
+        .loader_wrapper{
+            .load_pseudo_icon{
+                font-size: 30px;
+                letter-spacing: -2px;
+            }
+            .load_pseudo_icon:after{
+                top: 19px;
+            }
+            .load_text_content{
+                margin: 70px 0;
+                text-align: center;
+                .win_95_ico{
+                    width: 340px;
+                    height: 250px;
+                }
+                .load_text{
+                    width: 400px;
+                
+                    h1{
+                        
+                        font-size: 70px;
+                        line-height: 54px;
+                    
+                    }
+                   
+                }
+            }
+
+        }
+    }
+    
+    
+}
+
+@media screen and (max-width: 420px) {
+    .loader{
+        .loader_wrapper{
+            .load_pseudo_icon{
+                font-size: 30px;
+                letter-spacing: -2px;
+            }
+            .load_pseudo_icon:after{
+                top: 19px;
+            }
+            .load_text_content{
+                margin: 70px 0;
+                text-align: center;
+                .win_95_ico{
+                    width: 320px;
+                    height: 220px;
+                }
+                .load_text{
+                    width: 360px;
+                    margin-top: 10px;
+                    p{
+                        font-size: 20px;
+                    }
+                
+                    h1{
+                        
+                        font-size: 60px;
+                        line-height: 45px;
+                    
+                    }
+                   
+                }
+            }
+
+        }
+    }
+   
+}
+@media screen and (max-width: 360px) {
+    .loader{
+        .loader_wrapper{
+            .load_pseudo_icon{
+                font-size: 30px;
+                letter-spacing: -2px;
+            }
+            .load_pseudo_icon:after{
+                top: 19px;
+            }
+            .load_text_content{
+                margin: 70px 0;
+                text-align: center;
+                .win_95_ico{
+                    width: 300px;
+                    height: 200px;
+                }
+                .load_text{
+                    width: 320px;
+                    margin-top: 30px;
+                    p{
+                        font-size: 20px;
+                    }
+                
+                    h1{
+                        
+                        font-size: 50px;
+                        line-height: 20px;
+                        span{
+                            margin-left: -15px;
+                        }
+                    
+                    }
+                    h3{
+                        margin-right: 20px;
+                        line-height: 40px;
+                    }
+                   
+                }
+            }
+
+        }
+    }
+    
+    
+}
+
+@media screen and (max-width: 320px) {
+    .loader{
+        .loader_wrapper{
+            .load_pseudo_icon{
+                font-size: 30px;
+                letter-spacing: -2px;
+            }
+            .load_pseudo_icon:after{
+                top: 19px;
+            }
+            .load_text_content{
+                margin: 90px 0;
+                text-align: center;
+                .win_95_ico{
+                    width: 260px;
+                    height: 160px;
+                }
+                .load_text{
+                    width: 280px;
+                    margin-top: 20px;
+                    p{
+                        font-size: 20px;
+                    }
+                
+                    h1{
+                        font-size: 45px;
+                        line-height: 40px;
+                        span{
+                            margin-left: -10px;
+                            font-size: 50px
+                        }
+                    
+                    }
+                    h3{
+                        margin-right: 20px;
+                        line-height: 22px;
+                        font-size: 25px;
+                    }
+                   
+                }
+            }
+
+        }
+    }
+   
+    
+}

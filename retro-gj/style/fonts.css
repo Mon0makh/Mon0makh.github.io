@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Las Enter Personal Use Only";
+  src: url("LasEnter_PersonalUseOnly.eot?") format("eot"), url("LasEnter_PersonalUseOnly.woff") format("woff"), url("LasEnter_PersonalUseOnly.ttf") format("truetype"), url("LasEnter_PersonalUseOnly.svg#LasEnterPersonalUseOnly") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Abuget";
+  src: url("Abuget.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+/*# sourceMappingURL=fonts.css.map */

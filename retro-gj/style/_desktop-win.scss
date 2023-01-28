@@ -1,0 +1,678 @@
+
+.desktop_wins{
+    position: fixed;
+    top: 130px;
+    left: 350px;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 500px;
+    height: 400px;
+    background-color: $win;
+    padding: 2px;
+    box-sizing: border-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $wt $bk $bk $wt;
+    display: none;
+   
+  
+   
+    .win_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(6, 21, 127);
+        padding: 2px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: $bk $wt $wt $bk;
+        cursor: move;
+    
+        .win_icon_text{
+            display: flex;
+            align-items: center;
+            .win_header_icon{
+                width: 12px;
+                height: 12px;
+                margin: 5px;
+            }
+            .win_header_way{
+                font-family: $pix2;
+                font-size: 20px;
+                color: $wt;
+            }
+        }
+        .win_control_btns{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            img{
+                margin: 0 2px;
+            }
+        }
+    }
+    .win_content{
+        margin-top: 5px;
+        font-size: 13px;
+        overflow-y: scroll;
+        color: #56d7e4;
+        font-family: $inco;
+        padding: 10px;
+        border-width: 2px;
+        border-style: solid;
+        background-color: $bk;
+        text-align: justify;
+        line-height: 18px;
+        border-color: $bk $wt $wt $bk;
+        width: 466px;
+        height: 312px;
+        .win_content_text{
+            margin: 5px 0;
+        }
+        .win_content_list{
+            margin-left: 15px;
+            list-style-type: disc;
+            li{
+                color: #3ea6af;
+            }
+            li span{
+                color: #56d7e4;
+            }
+        }
+        .text_question{
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .text_answer{
+            display: none;
+        }
+        .text_answer_on{
+            display: block;
+            color: #e4d656;
+            margin-left: 10px;
+        }
+        .text_date{
+            cursor: pointer;
+        }
+        .date_table{
+            text-align: center;
+            tr,
+            th,
+            td{
+                border: 1px #3ea6af solid;
+                padding: 5px;
+            }
+
+        }
+        .show_date_table{
+            display: none;
+        }
+        .show_date_table_on{
+            display: block;
+        }
+        
+    }
+    .win_content_inner_elems{
+        background-color: #f1f1f1;
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+        align-content: flex-start;
+        .win_content_icons{
+            margin: 20px 10px;
+            width: 70px;
+            height: 70px;
+            text-align: center;
+            .win_content_links{
+                cursor: pointer;
+                color: #105056;
+                text-decoration: none; 
+                
+                .win_content_img{
+                    width: 30px;
+                    height: 30px;
+                }
+                .win_content_img_main_sponsor{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            
+        }
+    }
+   
+    .win_footer{
+        display: flex;
+        justify-content: space-between;
+    
+
+        .win_footer_line{
+            width: 50px;
+            height: 15px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: $bk $wt $wt $bk;
+        }
+        .long_line{
+            width: 378px;
+
+        }
+        .short_lines{
+            display: flex;
+        }
+    }
+    
+}
+.desktop_win_registration{
+    height: 422px;
+    top: 150px;
+    left: 400px;
+    .win_form_content{
+        background-color: $win;
+        border-width: 2px;
+        border-style: solid;
+        border-color: $wt $bk $bk $wt;
+        color: $bk;
+        overflow: hidden;
+        height: 350px;
+        .win_reg_text{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .win_reg_form{
+            .win_form_inform{
+                display: flex;
+                margin: 5px 0;
+                justify-content: space-between;
+                .win_inform_p{
+                    margin-right: 5px;
+                }
+                .win_reg_input{
+                    display: block;
+                    padding: 2px;
+                    width: 220px;
+                }
+
+            }
+            .win_form_footer{
+                text-align: right;
+                margin-top: 20px;
+                .win_form_btn{
+                    background-color: $win;
+                    border-width: 2px;
+                    border-style: solid;
+                    width: 100px;
+                    height: 30px;
+                    border-color: $wt $bk $bk $wt;
+                    font-size: 17px;
+                }
+                .win_form_btn:active{
+                    border-width: 2px;
+                    border-style: solid;
+                    border-color: $bk $wt $wt $bk;
+                }
+
+            }
+        }
+
+    }
+    
+}
+
+.form_info_win{
+    background-color: $win;
+    box-sizing: border-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $wt $bk $bk $wt;
+    width: 350px;
+    height: 196px;
+    padding: 3px;
+    position: relative;
+    top: 200px;
+    // left: 600px;
+    margin: 0 auto;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: none;
+   
+    .form_info_header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(6, 21, 127);
+        padding: 3px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: $bk $wt $wt $bk;
+        height: 20px;
+        .info_icon_text{
+            font-family: $pix2;
+            color: $wt;
+            font-size: 18px;
+        }
+        .close_windows_info{
+            cursor: pointer;
+        }
+    }
+    .form_info_content{
+        padding: 10px;
+    
+        .text_content{
+           
+            display: flex;
+            align-items:flex-end;
+            .info_img{
+                width: 50px;
+                height: 50px;
+            }
+            p{
+                font-size: 18px;
+                font-family: $inco;
+            }
+
+        }
+        .submit_content{
+            margin-left: 216px;
+            margin-top: 55px;
+            width: 80px;
+            padding: 4px;
+            cursor: pointer;
+            border-width: 2px;
+            border-style: solid;
+            background: rgb(196, 193, 193);
+            border-color: $wt $bk $bk $wt;
+            user-select: none;
+
+        }
+        .submit_content:active{
+            border-width: 2px;
+            border-style: solid;
+            border-color:  $bk $wt $wt $bk;
+        }
+        
+    }
+}
+
+.form_info_win_on {
+    display: block;
+}
+
+.desktop_win_faq{
+    top: 165px;
+    left: 400px
+}
+.desktop_win_rules{
+    left: 450px;
+    top: 140px;
+}
+.desktop_win_schedule{
+    left: 500px;
+    top: 168px;
+}
+.desktop_win_awards{
+    left: 550px;
+    top: 140px;
+} 
+
+.desktop_win_about_on{
+    display: block;
+}
+.desktop_win_faq_on{
+    display: block;
+}
+.desktop_win_rules_on{
+    display: block;
+}
+.desktop_win_schedule_on{
+    display: block;
+}
+.desktop_win_registration_on{
+    display: block;
+}
+.desktop_win_awards_on{
+    display: block;
+} 
+.desktop_win_sponsors_on{
+    display: block;
+} 
+.desktop_win_social_on{
+    display: block;
+} 
+.desktop_win_games_on{
+    display: block;
+} 
+
+// windows responsive
+@media screen and (max-width: 1200px){
+    .desktop_wins{
+        top: 80px;
+        left: 150px;
+    }
+    .desktop_win_faq{
+        top: 100px;
+        left: 200px
+    }
+    .desktop_win_rules{
+        top: 120px;
+        left: 250px;
+        
+    }
+    .desktop_win_schedule{
+        top: 140px;
+        left: 300px;
+    }
+    .desktop_win_awards{
+        top: 160px;
+        left: 350px;        
+    } 
+   
+}
+
+
+@media screen and (max-width: 786px){
+    .desktop_wins{
+        top: 70px;
+        left: 120px;
+    }
+    .desktop_win_faq{
+        top: 90px;
+        left: 160px
+    }
+    .desktop_win_rules{
+        top: 120px;
+        left: 140px;
+        
+    }
+    .desktop_win_schedule{
+        top: 140px;
+        left: 160px;
+    }
+    .desktop_win_awards{
+        top: 160px;
+        left: 140px;        
+    } 
+
+    
+}
+
+@media screen and (max-width: 678px) and (min-width: 480px){
+    .desktop_wins{
+        top: 60px;
+        left: 110px;
+        width: 360px;
+        height: 360px;
+        .win_header{
+            .win_icon_text{
+                .win_header_way{
+                    font-size: 18px;
+                }
+            }
+        }
+        .win_content{
+            width: 328px;
+            height: 270px;
+        }
+    }
+    .desktop_win_faq{
+        top: 80px;
+        left: 140px
+    }
+    .desktop_win_rules{
+        top: 100px;
+        left: 120px;
+        
+    }
+    .desktop_win_schedule{
+        top: 120px;
+        left: 140px;
+    }
+    .desktop_win_awards{
+        top: 140px;
+        left: 120px;        
+    } 
+    .desktop_win_registration{
+        width: 390px;
+        height: 415px;
+        top: 60px;
+        left: 60px;
+        
+        
+        .win_form_content{
+           width: 350px;
+           height: 340px;
+           margin: 8px auto;
+           
+            .win_reg_text{
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            .win_reg_form{
+                .win_form_inform{
+                    display: flex;
+                    margin: 5px 0;
+                    justify-content: space-between;
+                    .win_inform_p{
+                        margin-right: 5px;
+                        font-size: 14px;
+                        text-align: left;
+                    }
+                    .win_reg_input{
+                        display: block;
+                        padding: 2px;
+                        width: 160px;
+                    }
+                }
+                .win_form_footer{
+                    margin-top: 10px; 
+                    .win_form_btn{
+                        width: 80px;
+                        height: 30px;
+                        font-size: 16px;
+                    }
+                   
+    
+                }
+            }
+    
+        }
+        
+    }
+    
+
+}
+
+@media screen and (max-width: 480px) and (min-width: 360px){
+    .desktop_wins{
+        top: 60px;
+        left: 60px;
+        width: 300px;
+        height: 300px;
+        .win_header{
+            .win_icon_text{
+                .win_header_way{
+                    font-size: 14px;
+                }
+
+            }
+            
+        }
+        .win_content{
+            width: 268px;
+            height: 212px;
+        }
+        
+    }
+    .desktop_win_registration{
+        width: 350px;
+        height: 390px;
+        top: 60px;
+        left: 20px;
+        
+        
+        .win_form_content{
+           width: 310px;
+           height: 312px;
+           margin: 8px auto;
+           overflow: scroll;
+           
+            .win_reg_text{
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            .win_reg_form{
+                .win_form_inform{
+                    display: flex;
+                    margin: 5px 0;
+                    justify-content: space-between;
+                    .win_inform_p{
+                        margin-right: 5px;
+                        font-size: 14px;
+                        text-align: left;
+                    }
+                    .win_reg_input{
+                        display: block;
+                        padding: 2px;
+                        width: 160px;
+                    }
+                }
+                .win_form_footer{
+                    margin-top: 10px; 
+                    .win_form_btn{
+                        width: 80px;
+                        height: 30px;
+                        font-size: 16px;
+                    }
+                   
+    
+                }
+            }
+    
+        }
+        
+    } 
+
+}
+@media screen and (max-width: 480px){
+    .form_info_win{
+        width: 300px;
+        .form_info_content{
+            
+            .submit_content{
+                margin-left: 185px;
+            }
+            
+        }
+       
+    }
+    .desktop_wins{
+        .win_content_sponsors_social{
+            .win_content_icons{
+                width: 55px;
+                height: 55px;
+                margin: 10px 13px;
+               
+                .win_content_links{
+                    text-align: center;
+                    
+                    .win_content_img{
+                        width: 25px;
+                        height: 25px;
+                    }
+                    .content_names{
+                        font-size: 13px;
+                    }
+    
+                }
+    
+                
+            }
+        }
+
+    }
+    
+}
+
+@media screen and (max-width: 360px) and (min-width: 320px){
+    .desktop_wins{
+        top: 60px;
+        left: 20px;
+        width: 300px;
+        height: 300px;
+        .win_header{
+            .win_icon_text{
+                .win_header_way{
+                    font-size: 14px;
+                }
+
+            }
+            
+        }
+        .win_content{
+            width: 268px;
+            height: 212px;
+        }
+        
+    }
+    .desktop_win_registration{
+        width: 310px;
+        height: 435px;
+        top: 40px;
+        left: 20px;
+        
+        
+        .win_form_content{
+           width: 270px;
+           height: 353px;
+           margin: 8px auto;
+           overflow: scroll;
+           
+            .win_reg_text{
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            .win_reg_form{
+                .win_form_inform{
+                    display: flex;
+                    margin: 5px 0;
+                    justify-content: space-between;
+                    .win_inform_p{
+                        margin-right: 5px;
+                        font-size: 14px;
+                        text-align: left;
+                    }
+                    .win_reg_input{
+                        display: block;
+                        padding: 2px;
+                        width: 160px;
+                    }
+                }
+                .win_form_footer{
+                    margin-top: 10px; 
+                    .win_form_btn{
+                        width: 80px;
+                        height: 30px;
+                        font-size: 16px;
+                    }
+                   
+    
+                }
+            }
+    
+        }
+        
+    }
+    
+    
+
+
+}
+
+@media screen and (min-width: 320px){
+    .desktop_wins{
+        left: 10px;
+    }
+}
